@@ -24,4 +24,20 @@ st.markdown("### 📝 Registrar Dados Manuais")
 st.write("Clique no botão abaixo para registrar suas informações personalizadas da pool.")
 
 if st.button("➕ Registrar Dados"):
-    st.switch_page("registro_manual_de_dados.py")
+    st.markdown("---")
+    st.subheader("📋 Formulário de Registro Manual")
+
+    plataforma = st.selectbox("Plataforma", ["Orca", "Raydium", "Meteora", "Kamino"])
+    pool = st.text_input("Pool (ex: SOL/USDC)")
+    valor = st.number_input("Valor Investido (em USD)", min_value=0.0, format="%.2f")
+    quantidade = st.text_input("Quantidade de Tokens (ex: SOL: 0.2 | USDC: 100)")
+    data = st.date_input("Data de Entrada")
+
+    if st.button("Salvar Dados"):
+        st.success("✅ Dados registrados com sucesso (exibição simulada abaixo).")
+        st.write(f"**Plataforma**: {plataforma}")
+        st.write(f"**Pool**: {pool}")
+        st.write(f"**Valor investido**: US$ {valor:.2f}")
+        st.write(f"**Quantidade**: {quantidade}")
+        st.write(f"**Data de entrada**: {data}")
+
