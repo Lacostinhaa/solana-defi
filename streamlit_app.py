@@ -2,7 +2,11 @@ import streamlit as st
 import pandas as pd
 from datetime import date
 
-st.set_page_config(page_title="Painel DeFi Solana", layout="wide")
+st.set_page_config(
+    page_title="Painel DeFi Solana",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 st.title("📊 Painel DeFi - Solana com Kamino")
 st.markdown("Este é o painel de monitoramento de pools e empréstimos na rede Solana.")
