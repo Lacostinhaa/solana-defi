@@ -23,4 +23,4 @@ st.markdown("### 📝 Registrar Dados Manuais")
 st.write("Clique no botão abaixo para registrar suas informações personalizadas da pool.")
 
 if st.button("➕ Registrar Dados"):
-    st.switch_page("pages/registro_de_dados.py")
+   st.markdown("[➕ Registrar Dados](./pages/registro_de_dados.py)")
