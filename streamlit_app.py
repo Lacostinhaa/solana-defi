@@ -21,6 +21,6 @@ with st.expander("🔽 Ver detalhes do empréstimo"):
 
 st.markdown("### 📝 Registrar Dados Manuais")
 st.write("Clique no botão abaixo para registrar suas informações personalizadas da pool.")
+st.info("Acesse a página **📋 Registro Manual de Dados** no menu lateral para adicionar suas informações personalizadas.")
 
-if st.button("➕ Registrar Dados"):
-   st.markdown("[➕ Registrar Dados](./pages/registro_de_dados.py)")
+  
