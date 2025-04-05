@@ -18,7 +18,6 @@ with st.expander("🔽 Ver detalhes do empréstimo"):
     st.write("• Status: 🟡 Take Care")
     st.write("• Data de entrada: 05/04/2025")
     st.write("• Health Factor: 1.41")
-if st.button("➕ Registrar Dados"):
     
 st.markdown("### 📝 Registrar Dados Manuais")
 st.write("Clique no botão abaixo para registrar suas informações personalizadas da pool.")
